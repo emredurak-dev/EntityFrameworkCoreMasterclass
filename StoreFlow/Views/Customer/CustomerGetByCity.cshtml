@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "CustomerGetByCity";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Sehirde musteri var mi?</h4>
+            <p class="card-description">
+                Sehirde musteri var mi?
+            </p>
+            <form asp-action="CustomerGetByCity" method="get" class="forms-sample">
+                <div class="form-group">
+                    <label>Sehir Adi Giriniz</label>
+                    <input type="text" class="form-control" name="city" required placeholder="Sehir adini yaziniz...">
+                </div>
+
+
+                <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                <button class="btn btn-light">Cancel</button>
+            </form>
+            <br />
+            <div class="alert alert-success">@ViewBag.message</div>
+        </div>
+    </div>
+</div>

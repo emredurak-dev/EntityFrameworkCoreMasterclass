@@ -1,0 +1,51 @@
+﻿@model List<Customer>
+@{
+    ViewData["Title"] = "CustomerListOrderByCustomerName";
+    Layout = "~/Views/Layout/Index.cshtml";
+    int count = 0;
+}
+
+<div class="row">
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Customers (order by "customer name")</h4>
+                <a href="/Customer/AddCustomer/">
+                    <p class="card-description">
+                        Add customer <code>.tbl_customers</code>
+                    </p>
+                </a>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Customer Name & Surname</th>
+                                <th>City</th>
+                                <th>Balance</th>
+                                <th>Delete</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                count++;
+                                <tr>
+                                    <th>@count</th>
+                                    <td>@item.CustomerName @item.CustomerSurname</td>
+                                    <td>@item.CustomerDistrict, @item.CustomerCity</td>
+                                    <td>USD @item.CustomerBalance</td>
+
+                                    <td><a href="/Customer/DeleteCustomer/@item.CustomerId" class="btn btn-outline-danger">Delete</a></td>
+                                    <td><a href="/Customer/EditCustomer/@item.CustomerId" class="btn btn-outline-info">Edit</a></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

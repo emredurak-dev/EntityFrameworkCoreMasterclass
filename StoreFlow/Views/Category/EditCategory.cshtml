@@ -1,0 +1,27 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "EditCategory";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Edit Category</h4>
+            <p class="card-description">
+                Edit category.
+            </p>
+            <form method="post" class="forms-sample">
+                <input type="hidden" asp-for="CategoryId" />
+                <div class="form-group">
+                    <label>Category Name</label>
+                    <input type="text" class="form-control" asp-for="CategoryName" placeholder="Category name...">
+                </div>
+
+             
+                <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                <button class="btn btn-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>

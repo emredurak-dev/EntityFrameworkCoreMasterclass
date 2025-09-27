@@ -1,0 +1,214 @@
+﻿<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Product Max. Price</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">USD @ViewBag.productMaxPrice</h2>
+                                   
+                                </div>
+
+                                <small class="text-gray">@ViewBag.productMaxPriceItemName</small>
+
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-chart-pie text-info icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Categories</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">@ViewBag.categoryCount</h2>
+                                   
+                                </div>
+
+                                <small class="text-gray">Categories.</small>
+
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-bell text-primary icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Product Min. Price</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">USD @ViewBag.productMinPrice</h2>
+                                 
+                                </div>
+
+                                <small class="text-gray">@ViewBag.productMinPriceItemName</small>
+
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-shopping-cart text-danger icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Total Product Stock</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">USD @ViewBag.totalSumProductStock</h2>
+
+                                </div>
+
+                                <small class="text-gray">Total product stock quantity.</small>
+
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-comment text-secondary icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Average Product Stock Quantity</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">@ViewBag.averageProductStock</h2>
+
+                                </div>
+
+                                <small class="text-gray">Avg. product stock quantity.</small>
+
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-boxes text-success icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Average Product Price</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">USD @ViewBag.averageProductPrice</h2>
+
+                                </div>
+
+                                <small class="text-gray">Avg. product price.</small>
+
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-money-bill text-bg-light icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">USD 50 > items count</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">USD @ViewBag.biggerPriceThan50ProductCount</h2>
+
+                                </div>
+
+                                <small class="text-gray">USD 50 > items count.</small>
+
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-glasses text-primary icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Item with Id 4</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">@ViewBag.getIdIs4ProductName</h2>
+
+                                </div>
+
+                                <small class="text-gray">Item with Id 4.</small>
+
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-book text-danger icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">Item stock > 50 and stock < 100 count</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-inline-block pt-3">
+                                <div class="d-md-flex">
+                                    <h2 class="mb-0">@ViewBag.productStockBiggerThan50SmallerThan100</h2>
+
+                                </div>
+
+                                <small class="text-gray">Item stock > 50 and stock < 100 count.</small>
+
+                            </div>
+                            <div class="d-inline-block">
+                                <i class="fas fa-arrow-alt-circle-up text-info icon-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- content-wrapper ends -->
+<!-- partial:../partials/_footer.html -->
+<footer class="footer">
+    <div class="d-sm-flex justify-content-center justify-content-sm-between">
+        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2018. All rights reserved.</span>
+        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="far fa-heart text-danger"></i></span>
+    </div>
+</footer>
+<!-- partial -->

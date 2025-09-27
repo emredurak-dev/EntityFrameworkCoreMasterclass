@@ -1,0 +1,55 @@
+﻿@model List<Category>
+@{
+    ViewData["Title"] = "CategoryList";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="row">
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Categories</h4>
+               <a href="/Category/AddCategory/"> <p class="card-description">
+                    Add category <code>.tbl_categories</code>
+                    </p>
+                </a>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Category Name</th>
+                                <th>Status</th>
+                                <th>Delete</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                
+                           
+                            <tr>
+                                <th>@item.CategoryId</th>
+                                <td>@item.CategoryName</td>
+                                @if (item.CategoryStatus==true)
+                                    {
+                                        <td><label class="badge badge-success badge-pill">Active</label></td>
+
+                                    }
+                                    else
+                                    {
+                                                                                <td><label class="badge badge-danger badge-pill">Passive</label></td>
+
+                                    }
+                                    <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-outline-danger">Delete</a></td>
+                                    <td><a href="/Category/EditCategory/@item.CategoryId" class="btn btn-outline-info">Edit</a></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

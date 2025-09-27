@@ -1,0 +1,58 @@
+﻿<div class="row grid-margin">
+    <div class="col-12">
+        <div class="card card-statistics">
+            <div class="card-body">
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                    <div class="statistics-item">
+                        <p>
+                            <i class="icon-sm fa fa-user mr-2"></i>
+                            Customers
+                        </p>
+                        <h2>@ViewBag.customerCount</h2>
+                        <label class="badge badge-outline-success badge-pill">2.7% increase</label>
+                    </div>
+                    <div class="statistics-item">
+                        <p>
+                            <i class="icon-sm fas fa-hourglass-half mr-2"></i>
+                            Categories
+                        </p>
+                        <h2>@ViewBag.categoryCount</h2>
+                        <label class="badge badge-outline-danger badge-pill">30% decrease</label>
+                    </div>
+                    <div class="statistics-item">
+                        <p>
+                            <i class="icon-sm fas fa-cloud-download-alt mr-2"></i>
+                            Products
+                        </p>
+                        <h2>@ViewBag.productCount</h2>
+                        <label class="badge badge-outline-success badge-pill">12% increase</label>
+                    </div>
+                    <div class="statistics-item">
+                        <p>
+                            <i class="icon-sm fas fa-check-circle mr-2"></i>
+                            Average Customer Balance
+                        </p>
+                        <h2>USD @ViewBag.averageCustomerBalance.ToString("0.00")</h2>
+                        <label class="badge badge-outline-success badge-pill">57% increase</label>
+                    </div>
+                    <div class="statistics-item">
+                        <p>
+                            <i class="icon-sm fas fa-chart-line mr-2"></i>
+                            Orders
+                        </p>
+                        <h2>@ViewBag.orderCount</h2>
+                        <label class="badge badge-outline-success badge-pill">10% increase</label>
+                    </div>
+                    <div class="statistics-item">
+                        <p>
+                            <i class="icon-sm fas fa-circle-notch mr-2"></i>
+                            Total Sales
+                        </p>
+                        <h2>USD @ViewBag.totalSales</h2>
+                        <label class="badge badge-outline-danger badge-pill">16% decrease</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

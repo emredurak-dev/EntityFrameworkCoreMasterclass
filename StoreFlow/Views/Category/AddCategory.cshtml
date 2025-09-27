@@ -1,0 +1,26 @@
+﻿@model Category
+@{
+    ViewData["Title"] = "AddCategory";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">+ Add New Category</h4>
+            <p class="card-description">
+                + Add new category.
+            </p>
+            <form method="post" class="forms-sample">
+                <div class="form-group">
+                    <label>Category Name</label>
+                    <input type="text" class="form-control" asp-for="CategoryName" placeholder="Category name...">
+                </div>
+             
+               
+                <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                <button class="btn btn-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
